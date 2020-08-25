@@ -10,7 +10,7 @@ import {useStyles} from "../../styles";
 const Top = ()=>{
     const classes = useStyles();
     return(
-        <AppBar color='primary' position='fixed'>
+        <AppBar color='white' position='fixed'>
             <Container fixed>
                 <div className={classes.overlay}/>
                 <Toolbar>
