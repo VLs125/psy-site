@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/VLs125.github.io/psy-site/static/css/main.5f361e03.chunk.css",
-    "main.js": "/VLs125.github.io/psy-site/static/js/main.c5cc28bf.chunk.js",
-    "main.js.map": "/VLs125.github.io/psy-site/static/js/main.c5cc28bf.chunk.js.map",
-    "runtime-main.js": "/VLs125.github.io/psy-site/static/js/runtime-main.7f8b5d3a.js",
-    "runtime-main.js.map": "/VLs125.github.io/psy-site/static/js/runtime-main.7f8b5d3a.js.map",
-    "static/js/2.61c3dcbe.chunk.js": "/VLs125.github.io/psy-site/static/js/2.61c3dcbe.chunk.js",
-    "static/js/2.61c3dcbe.chunk.js.map": "/VLs125.github.io/psy-site/static/js/2.61c3dcbe.chunk.js.map",
-    "index.html": "/VLs125.github.io/psy-site/index.html",
-    "precache-manifest.1544e45a0ee2867f1bc1cc4ca202098d.js": "/VLs125.github.io/psy-site/precache-manifest.1544e45a0ee2867f1bc1cc4ca202098d.js",
-    "service-worker.js": "/VLs125.github.io/psy-site/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/VLs125.github.io/psy-site/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.61c3dcbe.chunk.js.LICENSE.txt": "/VLs125.github.io/psy-site/static/js/2.61c3dcbe.chunk.js.LICENSE.txt"
+    "main.css": "/psy-site/static/css/main.5f361e03.chunk.css",
+    "main.js": "/psy-site/static/js/main.a3c40a37.chunk.js",
+    "main.js.map": "/psy-site/static/js/main.a3c40a37.chunk.js.map",
+    "runtime-main.js": "/psy-site/static/js/runtime-main.26d4ba51.js",
+    "runtime-main.js.map": "/psy-site/static/js/runtime-main.26d4ba51.js.map",
+    "static/js/2.61c3dcbe.chunk.js": "/psy-site/static/js/2.61c3dcbe.chunk.js",
+    "static/js/2.61c3dcbe.chunk.js.map": "/psy-site/static/js/2.61c3dcbe.chunk.js.map",
+    "index.html": "/psy-site/index.html",
+    "precache-manifest.42e579333716bbce304a57a98f0924c7.js": "/psy-site/precache-manifest.42e579333716bbce304a57a98f0924c7.js",
+    "service-worker.js": "/psy-site/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/psy-site/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.61c3dcbe.chunk.js.LICENSE.txt": "/psy-site/static/js/2.61c3dcbe.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7f8b5d3a.js",
+    "static/js/runtime-main.26d4ba51.js",
     "static/js/2.61c3dcbe.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.c5cc28bf.chunk.js"
+    "static/js/main.a3c40a37.chunk.js"
   ]
 }
