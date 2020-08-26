@@ -6,7 +6,6 @@ import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import {useStyles} from "../../styles";
 
-
 const Top = ()=>{
     const classes = useStyles();
     return(
@@ -17,7 +16,9 @@ const Top = ()=>{
                     <IconButton className={classes.menuButton} edge='start' color='inherit' aria-label='menu'>
                         <MenuIcon/>
                     </IconButton>
-                    <Typography className={classes.title} variant='h6'>Ассоциация психологов</Typography>
+                    <img className={classes.logo} src="https://i.ibb.co/PMySjcG/dvssp-Logo.png"/>
+                    <Typography className={classes.title} variant='h6'>Дальневосточная ассоциация
+                        системных семейных психологов</Typography>
                     <Box mr={3}>
                         <Button variant='outlined' color='inherit'>
                             Log in
