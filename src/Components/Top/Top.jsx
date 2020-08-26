@@ -14,7 +14,7 @@ const Top = ()=>{
             <Container fixed>
                 <div className={classes.overlay}/>
                 <Toolbar>
-                    <IconButton className={classes.menuButton} edge='start' color='inherit' aria-label='menu'>
+                    <IconButton className={classes.menuButton} edge='start' color='secondary' aria-label='menu'>
                         <MenuIcon/>
                     </IconButton>
                     <Typography className={classes.title} variant='h6'>Ассоциация психологов</Typography>

@@ -46,5 +46,8 @@ export const useStyles = makeStyles((theme) => ({
     },
     footerTitle:{
         marginTop:theme.spacing(1)
+    },
+    footerContent:{
+        marginTop:theme.spacing(5)
     }
 }))

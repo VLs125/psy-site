@@ -14,7 +14,7 @@ const FooterContent = () =>{
         setValue(newValue);
     }
     const classes = useStyles();
-    return(<footer>
+    return(<footer className={classes.footerContent}>
 
         <BottomNavigation value={value}
                           onChange={handleChange}
