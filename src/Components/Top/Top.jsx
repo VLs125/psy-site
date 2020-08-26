@@ -1,11 +1,9 @@
 import React from 'react';
 
 import {AppBar, Box, Container, IconButton, Toolbar} from "@material-ui/core";
-import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import {useStyles} from "../../styles";
-import TemporaryDrawer from "./TopMenu/TopMenu";
 import TopMenu from "./TopMenu/TopMenu";
 
 const Top = ()=>{

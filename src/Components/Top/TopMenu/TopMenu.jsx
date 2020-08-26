@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
@@ -10,15 +9,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-
-const useStyles = makeStyles({
-    list: {
-        width: 250,
-    },
-    fullList: {
-        width: 'auto',
-    },
-});
+import {Typography} from "@material-ui/core";
+import {useStyles} from "../../../styles";
 
 export default function SwipeableTemporaryDrawer() {
     const classes = useStyles();
@@ -47,19 +39,19 @@ export default function SwipeableTemporaryDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
+                <Typography className={classes.topMenuTitle} variant="h6"> Специалистам</Typography>
                 {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
                     <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
                 ))}
             </List>
             <Divider />
             <List>
+                <Typography className={classes.topMenuTitle} variant="h6"> Клиентам</Typography>
                 {['All mail', 'Trash', 'Spam'].map((text, index) => (
                     <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
+g                        <ListItemText primary={text} />
                     </ListItem>
                 ))}
             </List>
