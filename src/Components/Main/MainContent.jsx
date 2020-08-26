@@ -19,7 +19,7 @@ const MainPage = ()=>{
         <main>
             <Paper
                 className={classes.mainFeaturesPost}
-                style={{backgroundImage: `url(https://source.unsplash.com/random)`}}>
+                style={{backgroundImage: `url(https://st.depositphotos.com/1385248/4723/i/950/depositphotos_47234695-stock-photo-chinese-painting-of-flowers-plum.jpg)`}}>
                 <Container fixed>
                     <Grid container>
                         <Grid item md={6}>
@@ -27,7 +27,7 @@ const MainPage = ()=>{
                                 <Typography
                                     component="h1"
                                     variant='h3'
-                                    color='inherit'
+                                    color='black'
                                     gutterBottom>
                                     Some text
                                 </Typography>

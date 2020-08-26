@@ -8,7 +8,12 @@ export const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(1)
     },
     title: {
-        flexGrow: 1
+        flexGrow: 1,
+        marginLeft:theme.spacing(2)
+    },
+    logo:{
+      width:80,
+      height:80,
     },
     mainFeaturesPost: {
         position: 'relative',
