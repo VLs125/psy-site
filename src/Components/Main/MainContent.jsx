@@ -19,7 +19,7 @@ const MainPage = ()=>{
         <main>
             <Paper
                 className={classes.mainFeaturesPost}
-                style={{backgroundImage: `url(https://st2.depositphotos.com/1005818/5398/i/950/depositphotos_53984163-stock-photo-chinese-painting.jpg)`}}>
+                style={{backgroundImage: `url(https://st.depositphotos.com/1385248/4723/i/950/depositphotos_47234695-stock-photo-chinese-painting-of-flowers-plum.jpg)`}}>
                 <Container fixed>
                     <Grid container>
                         <Grid item md={6}>

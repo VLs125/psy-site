@@ -5,6 +5,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import {useStyles} from "../../styles";
+import TemporaryDrawer from "./TopMenu/TopMenu";
+import TopMenu from "./TopMenu/TopMenu";
 
 const Top = ()=>{
     const classes = useStyles();
@@ -14,7 +16,7 @@ const Top = ()=>{
                 <div className={classes.overlay}/>
                 <Toolbar>
                     <IconButton className={classes.menuButton} edge='start' color='inherit' aria-label='menu'>
-                        <MenuIcon/>
+                        <TopMenu/>
                     </IconButton>
                     <img className={classes.logo} src="https://i.ibb.co/PMySjcG/dvssp-Logo.png"/>
                     <Typography className={classes.title} variant='h6'>Дальневосточная ассоциация
