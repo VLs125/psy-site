@@ -1,14 +1,18 @@
 import React from 'react';
 
-import {Container, Paper} from "@material-ui/core";
+import {CardContent, CardMedia, Container, Paper} from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
+import Card from "@material-ui/core/Card";
+import CardActions from "@material-ui/core/CardActions";
+import LayerIcon from "@material-ui/icons/Layers";
+import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
+import {useStyles} from "../../../../styles";
 
-import {useStyles} from "../../../styles";
+const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
 
-
-const Home = ()=>{
+const KeysPage = ()=>{
 
     const classes = useStyles();
     return(
@@ -18,13 +22,24 @@ const Home = ()=>{
                 style={{backgroundImage: `url(https://st.depositphotos.com/1385248/4723/i/950/depositphotos_47234695-stock-photo-chinese-painting-of-flowers-plum.jpg)`}}>
                 <Container fixed>
                     <Grid container>
-                        <Grid item md={6}  >
+                        <Grid item md={6}>
                             <div className={classes.mainFeaturesPostContent}>
                                 <Typography
                                     component="h1"
                                     variant='h3'
+                                    color='black'
                                     gutterBottom>
                                     Some text
+                                </Typography>
+
+                                <Typography
+                                    variant='h5'
+                                    color='inherit'
+                                    paragraph>
+
+                                    sometext2safaasf
+                                    asfasfsafasfasfaf
+                                    asfasfasfhafhasf
                                 </Typography>
                             </div>
                         </Grid>
@@ -59,9 +74,41 @@ const Home = ()=>{
                 </Container>
 
             </div>
+            <Container className={classes.cardGrid} maxWidth='md'>
+                <Grid container spacing={4}>
+                    {cards.map((card) => (
+                        <Grid item key={card} xs={12} sm={6} md={4}>
+                            <Card classname={classes.card}>
+                                <CardMedia
+                                    className={classes.cardMedia}
+                                    image='https://source.unsplash.com/random'
+                                    title='image title'/>
+                                <CardContent classname={classes.cardContent}>
+                                    <Typography variant='h5' gutterBottom>
+                                        Some posts
+                                    </Typography>
+                                    <Typography>
+                                        Some posts Some posts Some posts Some posts
+                                    </Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Button size='small' color='primary'>
+                                        View
+                                    </Button>
+                                    <Button size='small' color='primary'>
+                                        Edit
+                                    </Button>
+                                    <LayerIcon/>
+                                    <PlayCircleFilledIcon/>
+                                </CardActions>
 
+                            </Card>
+                        </Grid>
+                    ))}
+                </Grid>
+            </Container>
         </main>
     )
 }
 
-export default Home
+export default KeysPage

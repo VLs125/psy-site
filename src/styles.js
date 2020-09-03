@@ -1,11 +1,41 @@
 import {makeStyles} from "@material-ui/core/styles";
 
+
+
 export const useStyles = makeStyles((theme) => ({
     root: {
-        flexGrow: 1
+        flexGrow: 1,
+
     },
     list: {
         width: 250,
+    },
+    topMenuListItem:{
+        boxShadow: "9px 7px 17px 23px rgba(79,158,227,1)",
+    },
+    topMenuText:{
+
+    },
+
+
+
+    topMenuLink:{
+        textDecoration:'none',
+        '&:active': {
+            textDecoration:'none'
+        },
+        '&:visited': {
+            textDecoration:'none'
+        },
+        '&:link': {
+            textDecoration:'none'
+        },
+    },
+    topMenuButtonContained:{
+        background:"#4F9EE3",
+        '&:hover': {
+            backgroundColor: "#5F9FD3",
+        },
     },
     fullList: {
         width: 'auto',
@@ -15,6 +45,9 @@ export const useStyles = makeStyles((theme) => ({
     },
     menuButton: {
         marginRight: theme.spacing(1)
+    },
+    mainContentTitle:{
+      color:'black'
     },
     title: {
         flexGrow: 1,
@@ -26,11 +59,12 @@ export const useStyles = makeStyles((theme) => ({
     },
     mainFeaturesPost: {
         position: 'relative',
-        color: theme.palette.common.white,
+        color: theme.palette.common.black,
         marginBottom: theme.spacing(4),
+        height:'300px',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center'
+        backgroundPosition: 'center',
 
     },
     overlay: {

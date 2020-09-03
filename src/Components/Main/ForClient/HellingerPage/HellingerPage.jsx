@@ -1,14 +1,15 @@
 import React from 'react';
 
-import {Container, Paper} from "@material-ui/core";
+import { Container, Paper} from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 
-import {useStyles} from "../../../styles";
+import {useStyles} from "../../../../styles";
 
 
-const Home = ()=>{
+
+const HellingerPage = ()=>{
 
     const classes = useStyles();
     return(
@@ -18,13 +19,24 @@ const Home = ()=>{
                 style={{backgroundImage: `url(https://st.depositphotos.com/1385248/4723/i/950/depositphotos_47234695-stock-photo-chinese-painting-of-flowers-plum.jpg)`}}>
                 <Container fixed>
                     <Grid container>
-                        <Grid item md={6}  >
+                        <Grid item md={6}>
                             <div className={classes.mainFeaturesPostContent}>
                                 <Typography
                                     component="h1"
                                     variant='h3'
+                                    color='black'
                                     gutterBottom>
                                     Some text
+                                </Typography>
+
+                                <Typography
+                                    variant='h5'
+                                    color='inherit'
+                                    paragraph>
+
+                                    sometext2safaasf
+                                    asfasfsafasfasfaf
+                                    asfasfasfhafhasf
                                 </Typography>
                             </div>
                         </Grid>
@@ -61,7 +73,8 @@ const Home = ()=>{
             </div>
 
         </main>
+
     )
 }
 
-export default Home
+export default HellingerPage

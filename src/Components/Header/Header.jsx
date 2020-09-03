@@ -4,9 +4,9 @@ import {AppBar, Box, Container, IconButton, Toolbar} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
 import {useStyles} from "../../styles";
-import TopMenu from "./TopMenu/TopMenu";
+import HeaderMenu from "./TopMenu/HeaderMenu";
 
-const Top = ()=>{
+const Header = ()=>{
     const classes = useStyles();
     return(
         <AppBar color='white' position='fixed'>
@@ -14,9 +14,10 @@ const Top = ()=>{
                 <div className={classes.overlay}/>
                 <Toolbar>
                     <IconButton className={classes.menuButton} edge='start' color='inherit' aria-label='menu'>
-                        <TopMenu/>
+                        <HeaderMenu/>
                     </IconButton>
-                    <img className={classes.logo} src="https://i.ibb.co/PMySjcG/dvssp-Logo.png"/>
+
+                    <img className={classes.logo} src="https://i.ibb.co/PMySjcG/dvssp-Logo.png" alt='logo'/>
                     <Typography className={classes.title} variant='h6'>Дальневосточная ассоциация
                         системных семейных психологов</Typography>
                     <Box mr={3}>
@@ -24,7 +25,7 @@ const Top = ()=>{
                             Log in
                         </Button>
                     </Box>
-                    <Button mr={3} variant='contained' color='secondary'>
+                    <Button mr={3}  variant='contained' className={classes.topMenuButtonContained}>
                         Sign up
                     </Button>
                 </Toolbar>
@@ -33,4 +34,4 @@ const Top = ()=>{
     )
 }
 
-export default Top
+export default Header
