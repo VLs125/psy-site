@@ -96,6 +96,9 @@ export const useStyles = makeStyles((theme) => ({
         marginTop:theme.spacing(1)
     },
     footerContent:{
-        marginTop:theme.spacing(18)
+        position:'fixed',
+        width:'100%',
+        bottom:0,
+        marginTop:theme.spacing(12)
     }
 }))

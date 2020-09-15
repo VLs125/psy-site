@@ -4,15 +4,12 @@ import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
-import Link from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
-import Box from '@material-ui/core/Box';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Link from "@material-ui/core/Link";
 
 
 
@@ -36,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-const Registration = ()=> {
+const Login = ()=> {
     const classes = useStyles();
 
     return (
@@ -47,22 +44,10 @@ const Registration = ()=> {
                     <LockOutlinedIcon />
                 </Avatar>
                 <Typography component="h1" variant="h5">
-                    Регистрация
+                    Авторизация
                 </Typography>
                 <form className={classes.form} noValidate>
                     <Grid container spacing={4}>
-                        <Grid item xs={12} sm={12}>
-                            <TextField
-                                autoComplete="fname"
-                                name="firstName"
-                                variant="outlined"
-                                required
-                                fullWidth
-                                id="firstName"
-                                label="Ваше имя"
-                                autoFocus
-                            />
-                        </Grid>
                         <Grid item xs={12}>
                             <TextField
                                 variant="outlined"
@@ -94,12 +79,12 @@ const Registration = ()=> {
                         color="primary"
                         className={classes.submit}
                     >
-                        Зарегистрироваться
+                        Войти
                     </Button>
                     <Grid container justify="flex-end">
                         <Grid item>
                             <Link href="#" variant="body2">
-                                Уже есть аккаунт?
+                                Не зарегистрированы?
                             </Link>
                         </Grid>
                     </Grid>
@@ -108,4 +93,4 @@ const Registration = ()=> {
         </Container>
     );
 }
-export default Registration
+export default Login

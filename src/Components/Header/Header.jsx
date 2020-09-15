@@ -59,42 +59,11 @@ const Header = () => {
                     <Typography className={classes.title} variant='h6'>Дальневосточная ассоциация
                         системных семейных психологов</Typography>
                     <Box mr={3}>
+                        <NavLink to ='/login'  className={classes.topMenuLink}>
                         <Button onClick={handleClickOpenLogin} variant='outlined' color='inherit'>
                             Log in
                         </Button>
-                        <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-login">
-                            <DialogTitle id="form-dialog-login"> Log in</DialogTitle>
-                            <DialogContent>
-                                <DialogContentText>
-                                    Log in to see specialist
-                                </DialogContentText>
-                                <TextField
-                                    autoFocus
-                                    margin="dense"
-                                    onChange={(e) => setLoginUsername(e.target.value)}
-                                    id="username"
-                                    label="Email Adress"
-                                    type="email"
-                                    fullWidth/>
-
-                                <TextField
-                                    onChange={(e) => setLoginPassword(e.target.value)}
-                                    autoFocus
-                                    margin="dense"
-                                    id="password"
-                                    label="password"
-                                    type="email"
-                                    fullWidth/>
-
-
-                            </DialogContent>
-                            <DialogActions>
-                                <Button onClick={handleClose} color="primary">Cancel</Button>
-                                <Button onClick={login} color="primary">Log in</Button>
-
-                            </DialogActions>
-                        </Dialog>
-
+                        </NavLink>
 
                     </Box>
                     <NavLink to ='/registration'  className={classes.topMenuLink}>
