@@ -5,6 +5,7 @@ import Home from "./HomePage/Home";
 import { Switch, Route } from 'react-router-dom'
 import HellingerPage from "./ForClient/HellingerPage/HellingerPage";
 import BuisnessPage from "./ForClient/BusinessConsultationPage/BuisnessPage";
+import Registration from "./Registration/Registration";
 
 
 const MainContent= ()=>{
@@ -17,6 +18,7 @@ const MainContent= ()=>{
                 <Route path='/buisness' component={BuisnessPage}/>
                 <Route path='/hellinger' component={HellingerPage}/>
                 <Route path='/keys' component={ConsultationPage}/>
+                <Route path='/registration' component={Registration}/>
 
             </Switch>
 
